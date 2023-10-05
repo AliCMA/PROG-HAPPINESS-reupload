@@ -1,0 +1,18 @@
+//Components 
+@use "./components/main/main.scss";
+@use "./components/header/header.scss";
+@use "./components/LeftSection/LeftSection.scss";
+@use "./components/RightSection/RightSection.scss";
+@use "./components/footer/footer.scss";
+
+
+// Abstracts
+@use "./abstracts/reset/reset.scss";
+@use "./abstracts/colors/colors.scss";
+@use "./abstracts/fonts/fonts.scss";
+@use "./abstracts/Responsive/mediaqueries.scss";
+@use "./abstracts/variabel/vars.scss";
+@use "./abstracts/mixin/mixins.scss";
+
+// Base
+@use "./base.scss";

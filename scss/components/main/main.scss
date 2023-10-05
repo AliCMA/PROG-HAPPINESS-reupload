@@ -1,0 +1,9 @@
+// Importeer gebruikte files.
+@use "../../abstracts/variabel/vars.scss";
+@use "../../abstracts/colors/colors.scss";
+@import "../../abstracts/mixin/mixins.scss";
+
+
+.mainHappiness {
+    @include mainHappiness;     
+}

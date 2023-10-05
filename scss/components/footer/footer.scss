@@ -1,0 +1,7 @@
+//Importeer file die ik wil gebruiken::after
+@use "../../abstracts/colors/colors.scss";
+@import "../../abstracts/mixin/mixins.scss";
+
+.HappinessFooter{
+    @include happinessFooter;
+}

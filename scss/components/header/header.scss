@@ -1,0 +1,6 @@
+@use "../../abstracts/colors/colors.scss";
+@import "../../abstracts/mixin/mixins.scss";
+
+.HappinesHeader{
+    @include happinessHeader;
+}

@@ -1,0 +1,7 @@
+@use "../../abstracts/colors/colors.scss";
+
+@import "../../abstracts/mixin/mixins";
+
+.SectionRight {
+    @include RightSection;
+}

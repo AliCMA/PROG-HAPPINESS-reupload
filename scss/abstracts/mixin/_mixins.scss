@@ -1,0 +1,177 @@
+@mixin mainHappiness {
+    width: 100%;
+    height: calc(125vh - map-get(vars.$viewheightmeeting, "HeaderHight") - map-get(vars.$viewheightmeeting, "BodyPadding"));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .MainContent {
+        background-color: colors.$wit;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+
+@mixin happinessHeader {
+    background: colors.$grijs;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+
+    &__headerimage {
+        width: 10rem;
+        height: 10rem;
+        padding: 0.5rem;
+        aspect-ratio: 1/1;
+        border-radius: 10%;
+    }
+}
+
+@mixin happinessFooter {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: colors.$grijs;
+    padding: 3rem;
+
+    &__pfooter {
+        font-size: 100%;
+        color: rgb(79, 79, 79);
+    }
+}
+
+@mixin LeftSection {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 5rem;
+    right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__LeftSectionUl {
+        height: auto;
+        aspect-ratio: 1/1;
+        grid-template-rows: 20rem 20rem;
+        list-style: none;
+        gap: 4rem;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 20rem 20rem;
+    }
+
+    &__LeftSectionLi {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__LeftSectionTitle {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        background: none;
+        font-size: 95%;
+        color: colors.$wit;
+        z-index: 2;
+    }
+
+    &__LeftSectionImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__LeftSectionDatum {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        background: none;
+        font-size: 80%;
+        color: colors.$wit;
+        z-index: 2;
+    }
+}
+
+@mixin RightSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+  
+    &__SectionRightDiv {
+      min-height: 15rem;
+      max-width: 60rem;
+      position: relative;
+      overflow: hidden;
+      max-height: 20rem;
+      width: 100%;
+    }
+  
+    &__SectionRightImage{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    &__SectionRightDatum{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: colors.$wit;
+      z-index: 2;
+    }
+  
+    &__SectionRightTitle{
+      position: absolute;
+      bottom: 1rem;
+      color: colors.$wit;
+      z-index: 2;
+      left: 1rem;
+    }
+  
+    &__SectionRightContent{
+      padding-right: 4rem;
+      margin: 2rem;
+      overflow-x: hidden;
+      box-shadow: 0rem 0rem 1rem 0.3rem rgb(211, 211, 211);
+      padding: 1.5rem;
+      width: 100%;
+      overflow: scroll;
+    }
+  
+    &__SectionRightBtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      width: 60%;
+    }
+  
+    &__SectionRightSource{
+      color: black;
+      cursor: pointer;
+      background: colors.$grijs;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      width: 77.5%;
+      height: 4rem;
+      display: flex;
+    }
+  }

@@ -1,0 +1,8 @@
+//Importeer de file die ik wil gebruiken:
+@use "../../abstracts/./colors/colors.scss";
+
+@import "../../abstracts/mixin/mixins";
+
+.LeftSection {
+@include LeftSection; 
+}
